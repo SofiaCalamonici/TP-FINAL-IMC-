@@ -1,0 +1,32 @@
+
+print ("Bienvenido al programa ..") 
+persona = {"Nombre": "", "Apellido": "", "Edad": 0, "Peso": 0, "Altura": 0, "Dirección": "", "Telefono": ""}
+def cat_imc ():
+    "Obtencion de categoria de IMC" // compara el IMC para saber en que categoría esta
+    mientras que imc <18,5:                     
+        cat = "Bajo peso"
+        gato de regreso
+    mientras que 18,5 <imc <24,9:
+        cat = "Peso normal"
+        gato de regreso
+    mientras que 25,0 <imc <29,9:
+        cat = "Sobre Peso"
+        gato de regreso
+    mientras que 30.0 <imc <34.9:
+        cat = "Obesidad tipo I"
+        gato de regreso
+    mientras que 35,0 <imc <39,9:
+        cat = "Obesidad tipo II"
+        gato de regreso
+    mientras que imc> 40:
+        cat = "Obesidad tipo III"
+        gato de regreso
+def imprimir ():
+    print ("Informacion personal Nombre y Apellido:" + persona ["Nombre"]. upper () + "" + persona ["Apellido"]. upper () + "\ nCategoria de IMC:" + cat_imc (). upper ( ) + "/ Peso" + persona ["Peso"] + "Kg / Altura:" + persona ["Altura"] + "metros \ nEdad:" + persona ["Edad"] + "años" "\ nDireccion en: "+ persona [" Dirección "]. upper () +" / Telefono: "+ persona [" Telefono "]) // muestra en pantalla la información personal
+para p en persona:
+    persona [p] = input (f "ingrese su {p}:") 
+imc = round (float (persona ["Peso"]) / (float (persona ["Altura"]) ** 2), 2) // calcula el IMC 
+persona ["IMC"] = imc
+
+cat_imc ()
+imprimir ()
